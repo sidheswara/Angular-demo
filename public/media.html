@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css" media="screen">
+     .ticket {
+        border: 2px solid red;
+        padding: 10px;
+        box-shadow: 2px 2px 2px gray;
+     }
+     dl {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+     }
+     dt {
+      background-color: blue;
+      color: white;
+      margin-bottom: 10px;
+     }
+     h3 {
+        text-align: center;
+        background-color: yellow;
+        color: red;
+     }
+     .offer {
+        border-radius: 100px;
+        width: 100px;
+        height: 50px;
+        background-color: yellow;
+        text-align: center;
+        padding: 10px;
+        position: absolute;
+        right: 20px;
+        top: 100px;
+     }
+    </style>
+    <style type="text/css" media="print">
+      .offer{
+        display: none;
+      }
+      button{
+        display: none;
+      }
+      dt{
+        background-color: gray;
+        color: white;
+      }
+      .ticket{
+        border: none;
+        box-shadow: none;
+      }
+      h3 {
+        background-color: black;
+        color: white;
+      }
+    </style>
+</head>
+<body>
+    <div class="ticket">
+      <div class="offer">Special <br> Offer</div>
+      <h3>Your Ticket</h3>
+      <dl>
+        <dt>Your Name</dt>
+        <dd>Sidheswara</dd>
+        <dt>Departure</dt>
+        <dd>10/04/23</dd>
+        <dt>Time</dt>
+        <dd>10:30:00 am</dd>
+      </dl>
+      <button>Print</button>
+    </div>
+</body>
+</html>

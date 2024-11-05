@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart-Mobiles</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .product{
+            display: grid;
+            grid-template-columns: 3fr 6fr 3fr;
+            column-gap: 20px;
+            font-family: arial;
+        }
+        ul{
+            margin-left: -30px;
+            color: gray;
+        }
+        li{
+            margin-bottom: 20px;
+        }
+    </style>
+    <script type="text/javascript">
+    function bodyload(){
+        fetch("../data/product.json")
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(product){
+            document.getElementById("imgProduct").src=product.photo;
+            document.getElementById("lblTitle").innerHTML=product.title;
+            document.getElementById("lblPrice").innerHTML="&#8377;"+product.price
+
+            product.features.map(function(items){
+                var li=document.createElement("li");
+                li.innerHTML=items;
+
+                document.getElementById("lstFeatures").appendChild(li);
+            })
+            document.getElementById("lblRating").innerHTML=
+            `<span>${product.rating.rate}<span class="bi bi-star-fill"></span></span> <b>${product.rating.count} rating & ${product.rating.reviews} reviews</b>`;
+
+        })
+    }
+    </script>
+</head>
+<body onload="bodyload()">
+    <div class="product">
+      <div>
+        <img width="100%" height="300" id="imgProduct">
+      </div>
+      <div>
+        <h2 id="lblTitle"></h2>
+        <div>
+            <span id="lblRating"></span>
+        </div>
+        <div>
+            <ul id="lstFeatures">
+
+            </ul>
+        </div>
+      </div>
+      <div>
+      <h2 id="lblPrice"></h2>
+      </div>
+    </div>
+</body>
+</html>

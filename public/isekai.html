@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="../public/anime.ico">
+    <title>I SEKAI</title>
+    <style>
+        body {
+            background-size: cover;
+        }
+
+        header {
+            font-size: 50px;
+            color: white;
+            text-align: right;
+            font-weight: bold;
+            padding-right: 50px;
+            height: 80px;
+            padding: 20px;
+            margin-right: 50px;
+            margin-left: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            height: 200px;
+            margin-bottom: 90px;
+            justify-content: space-between;
+            padding: 50px;
+        }
+
+        .anime {
+            border: 1px solid white;
+            color: white;
+            width: 400px;
+            text-align: center;
+            height: 280px;
+            margin-top: 20px;
+            background-image: url(../public/images/anime.jfif);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .novel {
+            border: 1px solid white;
+            color: white;
+            width: 220px;
+            text-align: center;
+            height: 300px;
+            background-image: url(../public/images/D-R.jfif);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .manga {
+            border: 1px solid white;
+            color: white;
+            width: 220px;
+            text-align: center;
+            height: 300px;
+            background-image: url(../public/images/solo-leveing.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            font-size: 40px;
+            color: lightyellow;
+            margin-top: 50px;
+            margin-left: 250px;
+            margin-right: 250px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            color: white;
+            margin-top: 200px;
+        }
+
+        .row-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+            height: 30px;
+            justify-content: space-between;
+            margin: 50px;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        input {
+            width: 500px;
+            height: 35px;
+            font-size: 20px;
+        }
+
+        .search {
+            background-color: red;
+            height: 40px;
+            font-size: 23px;
+            width: 150px;
+            color: white;
+            margin-left: 10px;
+            border-style: none;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .enter {
+            border-style: none;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        .lang {
+            font-size: 20px;
+        }
+
+        details {
+            font-size: 20px;
+        }
+
+        details div:hover {
+            cursor: grab;
+            background-color: lightgreen;
+            color: black;
+        }
+
+        footer div {
+            padding: 10px;
+        }
+
+        .contact {
+            font-size: 18px;
+        }
+
+        .contact span:hover {
+            color: blueviolet;
+        }
+
+        article {
+            font-size: 35px;
+            font-style: italic;
+            color: turquoise;
+            margin-left: 50px;
+        }
+
+        .box {
+            width: 100px;
+            height: 30px;
+            background-color: rgba(255, 255, 255, 0.3);
+            align-items: center;
+            justify-content: center;
+            padding-top: 10px;
+            border-radius: 10px;
+        }
+
+        .box:hover {
+            background-color: blueviolet;
+            color: whitw;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-bottom: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .profile {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body background="../public/images/damo.jpg">
+    <header>
+        <div class="profile">
+            <span>
+                <details style="margin-top: 20px; font-size: 40px;">
+                    <summary><span class="bi bi-person-circle" title="Profile"></span></summary>
+                    <div style="font-size: 18px; text-align: center; margin-bottom: 10px;"><a href="/public/SignIn.html"
+                            target="_blank">SignIn</a></div>
+                    <div style="font-size: 18px; text-align: center; margin-bottom: 10px;"><a
+                            href="/public/profile.html" target="_blank">LogIn</a></div>
+                    <div style="font-size: 18px; text-align: center; margin-bottom: 10px;">LogOut</div>
+                </details>
+            </span>
+        </div>
+        <article>
+            Fusion of Three Worlds
+        </article>
+        <div>I ISEKAI <span class="bi bi-globe-central-south-asia"></span></div>
+    </header>
+    <div>
+        <div class="title">
+            Unlimited Animes, Mangas ,Manhwas and Novels
+        </div>
+        <form target="_blank" action="blank">
+            <input class="enter" type="text" placeholder="Enter the anime,novel,manga and manhwa name" required>
+            <button class="search">
+                Search
+            </button>
+        </form>>
+    </div>
+    <main>
+        <div class="novel">
+            <div class="box">
+                <a href="/public/novel.html" target="_blank"> NOVEL</a> <span class="bi bi-arrow-right-short"></span>
+            </div>
+        </div>
+        <div class="anime">
+            <div class="box">
+                <a href="/public/anime.html" target="_blank"> ANIME</a><span class="bi bi-arrow-right-short"></span>
+            </div>
+        </div>
+        <div class="manga">
+            <div class="box">
+                <a href="/public/manga.html" target="_blank">MANGA</a><span class="bi bi-arrow-right-short"></span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="row-1">
+            <div>
+                About Us
+            </div>
+            <div class="contact">
+                Contact Us : &nbsp;
+                <a href="https://facebook.com" target="_blank"> <span class="bi bi-facebook">FaceBook</a></span>
+                </span><a href="https://twitter.com" target="_blank"><span class="bi bi-twitter">Twitter</a></span>
+                <a href="https://instagram.com" target="_blank"><span class="bi bi-instagram">Instagram</a></span>
+                <a href="https://discord.com" target="_blank"><span class="bi bi-discord">Discord</a></span>
+                <a href="https://telegram.com" target="_blank"><span class="bi bi-telegram">Telegram</a></span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

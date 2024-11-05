@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templete Desgin</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-image: url(images/girl-1.jfif);
+            background-size: cover;
+            background-attachment: fixed;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        header {
+            height: 560px;
+            display: grid;
+            color: white;
+            font-family: arial;
+        }
+
+        section {
+            background-color: rgb(226, 226, 226);
+            background-image: url(images/girl-2.jpg);
+            height: 750px;
+            background-repeat: no-repeat;
+            margin-left: -30px;
+            margin-right: -30px;
+        }
+
+        .left {
+            margin-left: 600px;
+            padding-top: 100px;
+            padding-left: 30px;
+        }
+
+        nav {
+            height: 70px;
+            background-color: rgba(255, 255, 255, 0.3);
+            display: flex;
+            padding-left: 10px;
+            margin-top: -50px;
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+
+        nav div {
+            margin-right: 50px;
+            padding-top: 25px;
+        }
+
+        .top {
+            padding: 30px;
+            display: flex;
+        }
+
+        .title {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .title:hover {
+            color: rgb(113, 181, 159);
+        }
+
+        .sub-title {
+            font-size: 10px;
+        }
+
+        .time {
+            margin-left: 300px;
+            display: flex;
+        }
+
+        .time span {
+            margin-right: 10px;
+        }
+
+        .contact {
+            margin-left: 100px;
+            display: flex;
+        }
+
+        .contact span {
+            margin-right: 10px;
+        }
+
+        .social {
+            margin-left: 70px;
+            color: rgb(123, 211, 182);
+        }
+
+        .social span {
+            border: 10px solid transparent;
+            border-radius: 100px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .social span:hover {
+            border: 10px solid aquamarine;
+            color: white;
+        }
+
+        .gc {
+            margin-left: 222px;
+            background-color: aquamarine;
+            width: 220px;
+            padding: 25px;
+            padding-left: 75px;
+            border-top-left-radius: 100px;
+        }
+
+        article {
+            padding-top: 80px;
+            padding-left: 40px;
+        }
+
+        .artical-heading {
+            font-size: 40px;
+            font-family: arial;
+            font-weight: bold;
+            margin-top: 10px;
+            width: 450px;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            width: 500px;
+            height: 80px;
+            margin-top: 5px;
+            background-color: white;
+            padding: 30px;
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .info:hover {
+            background-color: rgb(85, 168, 140);
+            color: white;
+        }
+
+        .info span {
+            margin-right: 20px;
+        }
+
+        .a-title {
+            font-size: 15px;
+            font-family: arial;
+            margin-bottom: 20px;
+        }
+
+        .a-stitle {
+            font-size: 12px;
+            font-family: arial;
+            color: rgb(173, 172, 172);
+        }
+
+        .pen {
+            height: 300px;
+            background-image: url(images/pen.jpg);
+            background-size: cover;
+            display: flex;
+            
+        }
+
+        .information {
+            display: flex;
+            padding: 50px;
+            margin-top: 50px;
+        }
+
+        .information img {
+            margin-right: 20px;
+        }
+
+        .count {
+            font-size: 40px;
+            font-weight: bold;
+            font-family: arial;
+            color: white;
+        }
+
+        .name {
+            font-family: arial;
+            color: white;
+            margin-top: 10px;
+        }
+
+        .back {
+            background-color: rgb(243, 241, 241);
+            margin-left: -10px;
+           
+        }
+
+        .subject {
+            width: 330px;
+            height: 400px;
+            margin-left: 20px;
+            display: grid;
+            padding: 10px;
+            background-color: white;
+        }
+
+        .pic {
+            grid-row: 1;
+            grid-column: 1;
+            padding: 10px;
+        }
+
+        .pic>img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .heading {
+            grid-row: 1;
+            grid-column: 2;
+            padding: 10px;
+            font-size: 25px;
+            font-family: arial;
+            font-weight: bold;
+        }
+
+        .rating {
+            grid-row: 2;
+            grid-column: 2;
+            color: rgb(98, 220, 179);
+        }
+
+        .author {
+            grid-row: 3;
+            grid-column: 2;
+        }
+
+        .author img {
+            margin-right: 5px;
+        }
+
+        .lecturs {
+            grid-row: 4;
+            grid-column: 2;
+            padding-bottom: 30px;
+        }
+
+        .cost {
+            grid-row: 5;
+            grid-column: 1/3;
+            width: 270;
+            height: 20px;
+            background-color: rgba(0, 0, 0, 0.1);
+            color: rgb(95, 201, 165);
+            font-family: arial;
+            font-size: 15px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .enroll {
+            grid-row: 6;
+            grid-column: 1/3;
+            padding-top: 10px;
+        }
+
+        .enroll>button {
+            border-style: none;
+            width: 330px;
+            height: 25px;
+            padding-top: 20px;
+            padding-bottom: 35px;
+            background-color: white;
+            color: rgb(69, 206, 161);
+            font-size: 12px;
+            font-weight: bold;
+            border: 1px solid rgb(75, 201, 159);
+            border-radius: 5px;
+        }
+
+        .enroll>button:hover {
+            background-color: rgb(92, 214, 173);
+            color: white;
+        }
+
+        .course {
+            display: flex;
+            padding-left: 10px;
+            padding-right: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .line {
+            border-bottom: 2px solid gray;
+            width: 40px;
+            height: 20px;
+            align-items: center;
+            margin-left: 10px;
+        }
+
+        .slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cards {
+            padding: 20px;
+
+        }
+
+        .row {
+            display: flex;
+            text-align: center;
+        }
+
+        .card {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .card img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .card button {
+            border-style: none;
+            padding: 8px;
+            border-radius: 5px;
+            color: rgb(79, 182, 148);
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .card:hover {
+            background-color: rgb(107, 219, 182);
+            color: white;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-family: arial;
+            font-weight: bold;
+            padding-top: 20px;
+        }
+
+        .students {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .std {
+            width: 350px;
+            height: 250px;
+            margin: 10px;
+            display: grid;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .std img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .s-pic {
+            grid-row: 1;
+            grid-column: 1;
+        }
+
+        .s-name {
+            grid-row: 1;
+            grid-column: 2;
+            font-size: 25px;
+            font-family: arial;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        .s-course {
+            grid-row: 2;
+            grid-column: 2;
+            font-family: arial;
+            color: rgb(109, 222, 184);
+            font-size: 15px;
+            margin-top: -40px;
+        }
+
+        .s-info {
+            grid-row: 3;
+            grid-column: 1/3;
+            font-family: arial;
+            color: gray;
+        }
+
+        .blogs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .blog {
+            width: 350px;
+            height: 550px;
+            margin: 15px;
+            border-radius: 5px;
+            display: grid;
+            background-color: white;
+        }
+
+        .b-pic {
+            grid-row: 1;
+            grid-column: 1/4;
+        }
+
+        .b-pic img {
+            width: 350px;
+            height: 300px;
+        }
+
+        .admin {
+            grid-row: 2;
+            grid-column: 1;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: arial;
+            color: gray;
+            padding-left: 15px;
+            padding-top: 20px;
+        }
+
+        .date {
+            grid-row: 2;
+            grid-column: 2;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: arial;
+            color: gray;
+            padding-top: 20px;
+        }
+
+        .comments {
+            grid-row: 2;
+            grid-column: 3;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: arial;
+            color: rgb(93, 202, 165);
+            padding-top: 20px;
+        }
+
+        .b-title {
+            grid-row: 3;
+            grid-column: 1/4;
+            font-size: 25px;
+            font-family: arial;
+            padding-left: 15px;
+            padding-top: 20px;
+        }
+
+        .b-info {
+            grid-row: 4;
+            grid-column: 1/4;
+            font-family: arial;
+            color: gray;
+            margin-left: 15px;
+        }
+
+        .pricing {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 50px;
+            margin-right: 50px;
+            padding-bottom: 60px;
+        }
+
+        .pack {
+            width: 180px;
+            height: 350px;
+            margin: 10px;
+            padding: 40px;
+            background-color: white;
+        }
+
+        .pack:hover {
+            box-shadow: 1px 1px 10px gray;
+        }
+
+        .plan {
+            font-size: 15PX;
+        }
+
+        .p-price {
+            font-size: 50px;
+            font-weight: bold;
+            padding: 20px;
+            color: rgb(63, 190, 148);
+        }
+
+        .p-info {
+            font-size: 17px;
+            font-weight: normal;
+            color: gray;
+            line-height: 2;
+        }
+
+        .start>button {
+            border-style: none;
+            width: 200px;
+            height: 50px;
+            border: 1px solid rgb(100, 212, 175);
+            border-radius: 5px;
+            background-color: white;
+            color: rgb(90, 210, 170);
+            font-weight: bold;
+        }
+
+        .start>button:hover {
+            background-color: rgb(100, 212, 175);
+            color: white;
+        }
+
+        .sub {
+            background-color: rgb(72, 187, 148);
+            display: grid;
+            padding: 50px;
+            padding-left: 100px;
+            padding-right: 100px;
+            margin-bottom: 80px;
+        }
+
+        .s-head {
+            grid-row: 1;
+            grid-column: 1;
+            font-size: 30px;
+            font-family: arial;
+            font-weight: bold;
+            color: white;
+            width: 600px;
+            line-height: 1.5;
+        }
+
+        .s-subhead {
+            grid-row: 2;
+            grid-column: 1;
+            font-family: arial;
+            color: rgb(221, 218, 218);
+        }
+
+        .s-mail {
+            grid-row: 1;
+            grid-column: 2;
+            display: flex;
+            justify-content: space-between;
+            font-family: arial;
+            color: white;
+            border-bottom: 1px solid white;
+        }
+
+        .s-mail div {
+            margin-top: 50px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            margin: 80px;
+            height: 400px;
+            margin-bottom: -20px;
+            padding-bottom: 50px;
+        }
+
+        .col {
+            margin-right: 10px;
+        }
+
+        .f-head {
+            font-size: 30px;
+            font-family: arial;
+            font-weight: bold;
+        }
+
+        .f-subhead {
+            font-size: 13px;
+            font-family: arial;
+            color: rgb(92, 206, 168);
+            padding-bottom: 20px;
+        }
+
+        .f-info {
+            font-family: arial;
+            color: gray;
+            margin-bottom: 40px;
+        }
+
+        .f-contact span {
+            border: 15px solid rgb(95, 212, 173);
+            border-radius: 100px;
+            background-color: rgb(95, 212, 173);
+            color: white;
+            margin-left: 5px;
+        }
+
+        .e-heading {
+            font-size: 18px;
+            font-family: arial;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        .e-sub {
+            font-family: arial;
+            color: gray;
+            margin: 30px;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+
+        .e-sub a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        .e-sub a:hover {
+            color: rgb(93, 212, 172);
+        }
+
+        .e-sub span {
+            color: rgb(93, 212, 172);
+            font-size: 15px;
+        }
+
+        .post {
+            display: grid;
+            margin-bottom: 30px;
+        }
+
+        .p-img {
+            grid-row: 1;
+            grid-column: 1;
+        }
+
+        .p-img img {
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+        }
+
+        .p-time {
+            grid-row: 1;
+            grid-column: 2;
+            font-size: 12px;
+            font-family: arial;
+            color: rgb(88, 200, 163);
+            margin-top: 10px;
+        }
+
+        .p-info {
+            grid-row: 2;
+            grid-column: 2;
+            font-family: arial;
+            color: gray;
+            margin-top: -20px;
+            line-height: 1.5;
+        }
+
+        .p-info a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        .p-info a:hover {
+            color: rgb(88, 200, 163);
+        }
+
+        .contacts {
+            display: flex;
+            margin-bottom: 30px;
+            padding: 10px;
+        }
+
+        .icon {
+            color: rgb(84, 205, 164);
+        }
+
+        .i-info {
+            margin-left: 20px;
+            margin-top: -20px;
+            line-height: 15px;
+            font-family: arial;
+            color: gray;
+        }
+
+        .i-info a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        .i-info:hover {
+            color: rgb(88, 200, 163);
+        }
+
+        .i-info a:hover {
+            color: rgb(88, 200, 163);
+        }
+
+        .end {
+            text-align: center;
+            font-family: arial;
+            color: gray;
+            padding: 50px;
+            background-color: rgb(220, 222, 224);
+            width: 1150px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div>
+                <div class="title">
+                    ACADEMIA
+                </div>
+                <div class="sub-title">
+                    ONLINE EDUCATION & LEARNING
+                </div>
+            </div>
+            <div class="time">
+                <span style="font-size: 35px;" class="bi bi-clock"></span>
+                <div>
+                    <div>Monday - Friday</div>
+                    <div style="font-weight: bold;">8:00AM-8:00PM</div>
+                </div>
+            </div>
+            <div class="contact">
+                <span style="font-size: 35px;" class="bi bi-telephone"></span>
+                <div>
+                    <div>Call Us</div>
+                    <div style="font-weight: bold;">+2 392 3929 210</div>
+                </div>
+            </div>
+            <div class="social">
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-twitter"></span>
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-globe"></span>
+            </div>
+        </div>
+        <nav>
+            <div style="color:aquamarine">Home</div>
+            <div>All Courses</div>
+            <div>About</div>
+            <div>Team</div>
+            <div>Pricing</div>
+            <div>Jornal</div>
+            <div>Conate</div>
+            <span class="gc">
+                GET CERTIFICATE
+            </span>
+        </nav>
+        <article>
+            <p style="font-weight: bold; color:rgba(255, 255, 255, 0.7)">WELCOME TO ACADEMIA</p>
+            <h1 style="width: 350px;">Best Online Education Expertise</h1>
+            <p style="color:rgba(255, 255, 255, 0.7)">Far far away, behind the word mountains, far from the countries
+            </p>
+            <p style="color:rgba(255, 255, 255, 0.7)">Vokalia and Consonantia, there live the blind texts.</p>
+        </article>
+    </header>
+    <section>
+        <div class="left">
+            <div style="font-weight: bold; color:rgb(95, 201, 165); font-family: arial;">LEARN ANYTHING</div>
+            <div class="artical-heading">
+                Benefits About Online Learning Expertise
+            </div>
+            <div class="info">
+                <span><img src="images/book.jpg" width="60px" height="60px"></span>
+                <div>
+                    <div class="a-title">
+                        Online Courses
+                    </div>
+                    <div class="a-stitle">
+                        <p>Far far away, behind the word mountains, far from the countries</p>
+                        <p> Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <span><img src="images/certificat.jpg" width="60px" height="60px"></span>
+                <div>
+                    <div class="a-title">
+                        Earn A Certificates
+                    </div>
+                    <div class="a-stitle">
+                        <p>Far far away, behind the word mountains, far from the countries</p>
+                        <p> Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <span><img src="images/expert.jpg" width="60px" height="60px"></span>
+                <div>
+                    <div class="a-title">
+                        Learn with Expert
+                    </div>
+                    <div class="a-stitle">
+                        <p>Far far away, behind the word mountains, far from the countries</p>
+                        <p> Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pen">
+            <div class="information">
+                <img src="images/student.jpg" width="80px" height="80px">
+                <div>
+                    <div class="count">
+                        3,000
+                    </div>
+                    <div class="name">
+                        SUCCESS STORIES
+                    </div>
+                </div>
+            </div>
+            <div class="information">
+                <img src="images/science.jpg" width="80px" height="80px">
+                <div>
+                    <div class="count">
+                        320
+                    </div>
+                    <div class="name">
+                        TRUSTED TUTORS
+                    </div>
+                </div>
+            </div>
+            <div class="information">
+                <img src="images/calender.jpg" width="80px" height="80px">
+                <div>
+                    <div class="count">
+                        1,000
+                    </div>
+                    <div class="name">
+                        SCHEDULES
+                    </div>
+                </div>
+            </div>
+            <div class="information">
+                <img src="images/light.jpg" width="80px" height="80px">
+                <div>
+                    <div class="count">
+                        587
+                    </div>
+                    <div class="name">
+                        COURSES
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="back">
+            <div
+                style="font-weight: bold; color:rgb(94, 221, 179); font-family: arial; text-align: center; padding-top: 100px;">
+                OUR COURSES
+            </div>
+            <div
+                style="font-size: 40px; font-family: arial; text-align: center; font-weight: bold; padding-top: 20px; padding-bottom: 50px;">
+                Explore Our Popular Online Courses
+            </div>
+            <div class="course">
+                <div class="subject">
+                    <div class="pic">
+                        <img src="images/photo.jpg">
+                    </div>
+                    <div class="heading">
+                        Enhancing Adobe Photoshop CC 2020 Skills
+                    </div>
+                    <div class="rating">
+                        <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span
+                            class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span
+                            class="bi bi-star-fill"></span><span>(5.0)</span>
+                    </div>
+                    <div class="author">
+                        <img src="images/author.jpg" width="25px" height="25px">
+                        <span style="font-family: arial; color: gray;">by John Smith</span>
+                    </div>
+                    <div class="lecturs">
+                        <span style="font-family: arial; color: rgb(99, 196, 163);"> 50 lectures (190 hrs)</span>
+                    </div>
+                    <div class="cost">
+
+                        <span class="bi bi-currency-dollar"></span>100 All Courses /<span
+                            class="bi bi-currency-dollar"></span>15 per month
+
+                    </div>
+                    <div class="enroll">
+                        <button>
+                            ENROLL NO!
+                        </button>
+                    </div>
+                </div>
+                <div class="subject">
+                    <div class="pic">
+                        <img src="images/photo.jpg">
+                    </div>
+                    <div class="heading">
+                        Enhancing Adobe Photoshop CC 2020 Skills
+                    </div>
+                    <div class="rating">
+                        <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span
+                            class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span
+                            class="bi bi-star-fill"></span><span>(5.0)</span>
+                    </div>
+                    <div class="author">
+                        <img src="images/author.jpg" width="25px" height="25px">
+                        <span style="font-family: arial; color: gray;">by John Smith</span>
+                    </div>
+                    <div class="lecturs">
+                        <span style="font-family: arial; color: rgb(99, 196, 163);"> 50 lectures (190 hrs)</span>
+                    </div>
+                    <div class="cost">
+                        <span class="bi bi-currency-dollar"></span>100 All Courses /<span
+                            class="bi bi-currency-dollar"></span>15 per month
+                    </div>
+                    <div class="enroll">
+                        <button style="background-color: rgb(100, 228, 185); color: white;">
+                            ENROLL NO!
+                        </button>
+                    </div>
+                </div>
+                <div class="subject">
+                    <div class="pic">
+                        <img src="images/basic.jpg">
+                    </div>
+                    <div class="heading">
+                        Basic Fundamentals for Software Engineering
+                    </div>
+                    <div class="rating">
+                        <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span
+                            class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span
+                            class="bi bi-star-fill"></span><span>(5.0)</span>
+                    </div>
+                    <div class="author">
+                        <img src="images/author.jpg" width="25px" height="25px">
+                        <span style="font-family: arial; color: gray;">by John Smith</span>
+                    </div>
+                    <div class="lecturs">
+                        <span style="font-family: arial; color: rgb(99, 196, 163);"> 50 lectures (190 hrs)</span>
+                    </div>
+                    <div class="cost">
+                        <span class="bi bi-currency-dollar"></span>100 All Courses /&#xF636;15 per month
+                    </div>
+                    <div class="enroll">
+                        <button>
+                            ENROLL NO!
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div style="border-color: rgb(80, 206, 164);" class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div
+                style="font-weight: bold; color:rgb(103, 219, 180); font-family: arial; text-align: center; padding-top: 50px;">
+                COURSES
+            </div>
+            <div
+                style="font-size: 40px; font-family: arial; text-align: center; font-weight: bold; padding-top: 20px; padding-bottom: 50px;">
+                Browse Our Online Courses
+            </div>
+            <div class="cards">
+                <div class="row">
+                    <div class="card">
+                        <div>
+                            <img src="images/cu-1.jpg">
+                        </div>
+                        <div class="card-title">
+                            UI/UX Desgin Courses
+                        </div>
+                        <div>
+                            <button>
+                                25 Courses
+                            </button>
+                        </div>
+                    </div>
+                    <div style="background-color:  rgb(71, 173, 139); color: white;" class="card">
+                        <div>
+                            <img src="images/cu-2.jpg">
+                        </div>
+                        <div class="card-title">
+                            Art & Desgin
+                        </div>
+                        <div>
+                            <button>
+                                25 Courses
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <img src="images/cu-3.jpg">
+                        </div>
+                        <div class="card-title">
+                            Computer Science
+                        </div>
+                        <div>
+                            <button>
+                                10 Courses
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <img src="images/cu-4.jpg">
+                        </div>
+                        <div class="card-title">
+                            Histroy & Archeologic
+                        </div>
+                        <div>
+                            <button>
+                                25 Courses
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <img src="images/cu-5.jpg">
+                        </div>
+                        <div class="card-title">
+                            Software & Engineering
+                        </div>
+                        <div>
+                            <button>
+                                25 Courses
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <img src="images/cu-6.jpg">
+                        </div>
+                        <div class="card-title">
+                            information Software
+                        </div>
+                        <div>
+                            <button>
+                                25 Courses
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div>
+                            <img src="images/cu-7.jpg">
+                        </div>
+                        <div class="card-title">
+                            Health & Fitness
+                        </div>
+                        <div>
+                            <button>
+                                25 Courses
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <img src="images/cu-8.jpg">
+                        </div>
+                        <div class="card-title">
+                            Marketing
+                        </div>
+                        <div>
+                            <button>
+                                15 Courses
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <img src="images/cu-9.jpg">
+                        </div>
+                        <div class="card-title">
+                            Graphic Desgin
+                        </div>
+                        <div>
+                            <button>
+                                25 Courses
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <img src="images/cu-10.jpg">
+                        </div>
+                        <div class="card-title">
+                            Music
+                        </div>
+                        <div>
+                            <button>
+                                25 Courses
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <img src="images/cu-11.jpg">
+                        </div>
+                        <div class="card-title">
+                            Business Administration
+                        </div>
+                        <div>
+                            <button>
+                                25 Courses
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <img src="images/cu-12.jpg">
+                        </div>
+                        <div class="card-title">
+                            Web Management
+                        </div>
+                        <div>
+                            <button>
+                                25 Courses
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div style="border-color: rgb(80, 206, 164);" class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div
+                style="font-weight: bold; color:rgb(103, 219, 180); font-family: arial; text-align: center; padding-top: 100px;">
+                TESTIMONIAL
+            </div>
+            <div
+                style="font-size: 40px; font-family: arial; text-align: center; font-weight: bold; padding-top: 20px; padding-bottom: 50px;">
+                Our Successful Students
+            </div>
+            <div class="students">
+                <div class="std">
+                    <div class="s-pic">
+                        <img src="images/s-1.jpg">
+                    </div>
+                    <div class="s-name">
+                        ROGER SCOTT
+                    </div>
+                    <div class="s-course">
+                        MARKETING MANAGER
+                    </div>
+                    <div class="s-info">
+                        <p>Far far away, behind the word mountains,</p>
+                        <p>far from the countries Vokalia and</p>
+                        <p>Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+                <div class="std" style="background-color: rgb(67, 184, 145); color: white;">
+                    <div class="s-pic">
+                        <img src="images/s-2.jpg">
+                    </div>
+                    <div class="s-name">
+                        ROGER SCOTT
+                    </div>
+                    <div class="s-course" style="color:white">
+                        MARKETING MANAGER
+                    </div>
+                    <div class="s-info" style="color:white">
+                        <p>Far far away, behind the word mountains,</p>
+                        <p>far from the countries Vokalia and</p>
+                        <p>Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+                <div class="std">
+                    <div class="s-pic">
+                        <img src="images/s-3.jpg">
+                    </div>
+                    <div class="s-name">
+                        ROGER SCOTT
+                    </div>
+                    <div class="s-course">
+                        MARKETING MANAGER
+                    </div>
+                    <div class="s-info">
+                        <p>Far far away, behind the word mountains,</p>
+                        <p>far from the countries Vokalia and</p>
+                        <p>Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="padding-bottom: 70px;">
+                <div style="border-color: rgb(80, 206, 164);" class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div
+                style="font-weight: bold; color:rgb(94, 221, 179); font-family: arial; text-align: center; padding-top: 100px;">
+                OUR BLOG
+            </div>
+            <div
+                style="font-size: 40px; font-family: arial; text-align: center; font-weight: bold; padding-top: 20px; padding-bottom: 50px;">
+                Recent From Blog
+            </div>
+            <div>
+                <div class="blogs">
+                    <div class="blog">
+                        <div class="b-pic">
+                            <img src="images/b-1.jpg">
+                        </div>
+                        <div class="admin">
+                            <span style="color: rgb(92, 212, 172);" class="bi bi-person-fill"></span> ADMIN
+                        </div>
+                        <div class="date">
+                            <span style="color: rgb(92, 212, 172);" class="bi bi-calendar-day"></span> JAN. 18, 2021
+                        </div>
+                        <div class="comments">
+                            <span style="color: rgb(92, 212, 172);" class="bi bi-chat-fill"></span> 3 COMMENTS
+                        </div>
+                        <div class="b-title">
+                            Bulid your Dream Software & Engineering Career
+                        </div>
+                        <div class="b-info">
+                            <p>A small river named Duden flows by their</p>
+                            <p>place and supplies it with the necessary</p>
+                            <p>regelialia.</p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="b-pic">
+                            <img src="images/b-2.jpg">
+                        </div>
+                        <div class="admin">
+                            <span style="color: rgb(92, 212, 172);" class="bi bi-person-fill"></span> ADMIN
+                        </div>
+                        <div class="date">
+                            <span style="color: rgb(92, 212, 172);" class="bi bi-calendar-day"></span> JAN. 18, 2021
+                        </div>
+                        <div class="comments">
+                            <span style="color: rgb(92, 212, 172);" class="bi bi-chat-fill"></span> 3 COMMENTS
+                        </div>
+                        <div class="b-title">
+                            Bulid your Dream Software & Engineering Career
+                        </div>
+                        <div class="b-info">
+                            <p>A small river named Duden flows by their</p>
+                            <p>place and supplies it with the necessary</p>
+                            <p>regelialia.</p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="b-pic">
+                            <img src="images/b-3.jpg">
+                        </div>
+                        <div class="admin">
+                            <span style="color: rgb(92, 212, 172);" class="bi bi-person-fill"></span> ADMIN
+                        </div>
+                        <div class="date">
+                            <span style="color: rgb(92, 212, 172);" class="bi bi-calendar-day"></span> JAN. 18, 2021
+                        </div>
+                        <div class="comments">
+                            <span style="color: rgb(92, 212, 172);" class="bi bi-chat-fill"></span> 3 COMMENTS
+                        </div>
+                        <div class="b-title">
+                            Bulid your Dream Software & Engineering Career
+                        </div>
+                        <div class="b-info">
+                            <p>A small river named Duden flows by their</p>
+                            <p>place and supplies it with the necessary</p>
+                            <p>regelialia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    style="font-weight: bold; color:rgb(94, 221, 179); font-family: arial; text-align: center; padding-top: 100px;">
+                    OUR PRICING
+                </div>
+                <div
+                    style="font-size: 40px; font-family: arial; text-align: center; font-weight: bold; padding-top: 20px; padding-bottom: 50px;">
+                    <div
+                        style="font-size: 40px; font-family: arial; text-align: center; font-weight: bold; padding-top: 20px; padding-bottom: 50px;">
+                        Pricing & Packages
+                    </div>
+                    <div class="pricing">
+                        <div class="pack">
+                            <div class="plan">
+                                BASIC PLAN
+                            </div>
+                            <div class="p-price">
+                                <span style="font-size: 20px; color: gray; margin-bottom: 20px;"
+                                    class="bi bi-currency-dollar"></span>49K
+                            </div>
+                            <div class="p-info">
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.
+                            </div>
+                            <div class="start">
+                                <button>
+                                    GET STARTED
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pack">
+                            <div class="plan">
+                                BASIC PLAN
+                            </div>
+                            <div class="p-price">
+                                <span style="font-size: 20px; color: gray; margin-bottom: 20px;"
+                                    class="bi bi-currency-dollar"></span>79K
+                            </div>
+                            <div class="p-info">
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.
+                            </div>
+                            <div class="start">
+                                <button>
+                                    GET STARTED
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pack">
+                            <div class="plan">
+                                BASIC PLAN
+                            </div>
+                            <div class="p-price">
+                                <span style="font-size: 20px; color: gray; margin-bottom: 20px;"
+                                    class="bi bi-currency-dollar"></span>109K
+                            </div>
+                            <div class="p-info">
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.
+                            </div>
+                            <div class="start">
+                                <button>
+                                    GET STARTED
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pack">
+                            <div class="plan">
+                                BASIC PLAN
+                            </div>
+                            <div class="p-price">
+                                <span style="font-size: 20px; color: gray; margin-bottom: 20px;"
+                                    class="bi bi-currency-dollar"></span>149K
+                            </div>
+                            <div class="p-info">
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.
+                            </div>
+                            <div class="start">
+                                <button>
+                                    GET STARTED
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub">
+                    <div class="s-head">
+                        Newsletter - Stay tune and get the latest update
+                    </div>
+                    <div class="s-subhead">
+                        Far far away, behind the word mountains
+                    </div>
+                    <div class="s-mail">
+                        <div>Enter email address</div>
+                        <div><a href="" style="color: white;"><span class="bi bi-send-fill"></span></a></div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="col">
+                    <div class="f-head">
+                        ACADEMIA
+                    </div>
+                    <div class="f-subhead">
+                        ONLINE EDUCATION & LEARNING
+                    </div>
+                    <div class="f-info">
+                        <p>A small river named Duden</p>
+                        <p>flows by their place and</p>
+                        <p>supplies it with the necessary</p>
+                        <p>regelialia.</p>
+                    </div>
+                    <div class="f-contact">
+                        <a href=""> <span class="bi bi-twitter"></span></a>
+                        <a href=""><span class="bi bi-facebook"></span></a>
+                        <a href=""><span class="bi bi-instagram"></span></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="e-heading">
+                        Explore
+                    </div>
+                    <div class="e-sub">
+                        <a href=""><span class="bi bi-arrow-right"></span> About Us</a>
+                    </div>
+                    <div class="e-sub">
+                        <a href=""><span class="bi bi-arrow-right"></span> Services</a>
+                    </div>
+                    <div class="e-sub">
+                        <a href=""><span class="bi bi-arrow-right"></span> Courses</a>
+                    </div>
+                    <div class="e-sub">
+                        <a href=""><span class="bi bi-arrow-right"></span> Blog</a>
+                    </div>
+                    <div class="e-sub">
+                        <a href=""><span class="bi bi-arrow-right"></span> Contact Us</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="e-heading">
+                        Quick Links
+                    </div>
+                    <div class="e-sub">
+                        <a href=""><span class="bi bi-arrow-right"></span> Contact Us</a>
+                    </div>
+                    <div class="e-sub">
+                        <a href=""><span class="bi bi-arrow-right"></span> Pricing</a>
+                    </div>
+                    <div class="e-sub">
+                        <a href=""><span class="bi bi-arrow-right"></span> Terms & Conditions</a>
+                    </div>
+                    <div class="e-sub">
+                        <a href=""><span class="bi bi-arrow-right"></span> Privacy</a>
+                    </div>
+                    <div class="e-sub">
+                        <a href=""><span class="bi bi-arrow-right"></span> Feedbacks</a>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="e-heading">
+                        Recent Posts
+                    </div>
+
+                    <div>
+                        <div class="post">
+                            <div class="p-img">
+                                <img src="images/p1.jpg">
+                            </div>
+                            <div class="p-time">
+                                <sapn class="bi bi-calendar"></sapn>Jan. 18, 2021 <span
+                                    class="bi bi-person-fill"></span>Admin
+                            </div>
+                            <div class="p-info">
+                                <a href="">Creativity and <br>
+                                    Inspiration</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="post">
+                            <div class="p-img">
+                                <img src="images/p2.jpg">
+                            </div>
+                            <div class="p-time">
+                                <sapn class="bi bi-calendar"></sapn>Jan. 18, 2021 <span
+                                    class="bi bi-person-fill"></span>Admin
+                            </div>
+                            <div class="p-info">
+                                <a href="">Creativity and <br>
+                                    Inspiration</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="post">
+                                <div class="p-img">
+                                    <img src="images/p3.jpg">
+                                </div>
+                                <div class="p-time">
+                                    <sapn class="bi bi-calendar"></sapn>Jan. 18, 2021 <span
+                                        class="bi bi-person-fill"></span>Admin
+                                </div>
+                                <div class="p-info">
+                                    <a href="">Creativity and <br>
+                                        Inspiration</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="e-heading">
+                            Have a Questions?
+                        </div>
+                    </div>
+                    <div class="contacts">
+                        <div class="icon">
+                            <span class="bi bi-map-fill"></span>
+                        </div>
+                        <div class="i-info">
+                            <p>203 Fake St. Mountain View,</p>
+                            <p>San Francisco, California,</p>
+                            USA
+                        </div>
+                    </div>
+                    <div class="contacts">
+                        <div class="icon">
+                            <span class="bi bi-telephone-fill"></span>
+                        </div>
+                        <div class="i-info" style="margin-top: 3px;">
+                            <a href="">+2 392 3929 210</a>
+                        </div>
+                    </div>
+                    <div class="contacts">
+                        <div class="icon">
+                            <span class="bi bi-send-fill"></span>
+                        </div>
+                        <div class="i-info" style="margin-top: 3px;">
+                            <a href="">info@yourdomain.com</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="end">
+            Copyright &copy;2023 All rights reserved | This template is made <span style="color:gray"
+                class="bi bi-heart-fill"></span> with by <span style="color: rgb(94, 210, 171);">Colorlib</span>
+        </div>
+    </section>
+</body>
+
+</html>

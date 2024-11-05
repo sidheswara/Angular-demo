@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intra Links</title>
+    <Style>
+        .card{
+            width: 250px;
+            border: 1px solid black;
+            box-shadow: 2px 2px 2px gary;
+            padding: 5px;
+            margin: 20px;
+            height: 200px;
+            text-align: center;
+        }
+        .card:target{
+            background-color: black;
+            color: white;
+            font-family: arial;
+            font-weight: bold;
+            height: 100px;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+           margin-left: 100px;
+           margin-right: 100px;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 180px;
+            margin-right: 100px;
+        }
+        li{
+            margin-right: 100px;
+            font-size: 20px;
+        }
+    </Style>
+</head>
+<body>
+    <ul>
+        <li><a href="#html">HTML</a></li>
+        <li><a href="#css">CSS</a></li>
+        <li><a href="#js">JavaScript</a></li>
+    </ul>
+    <div class="container">
+            <div class="card" id="html">
+              <h2>HTML</h2>
+              <p>It is a markup language.</p>
+            </div>
+            <div class="card" id="css">
+               <h2>CSS</h2>
+               <P>It defines styles for HTML.</P>
+            </div>
+            <div class="card" id="js">
+              <h2>JavaScript</h2>
+              <p>It is a language to manipulate DOM.</p>
+            </div>
+    </div>
+</body>
+</html>
